@@ -1,0 +1,18 @@
+﻿            List<Person> people = new List<Person>
+            {
+                new Person{Firstname = "Bob", Lastname="van der Putten" },
+                new Person{Firstname = "Ronald", Lastname="Schellekens" },
+                new Person{Firstname = "Eric", Lastname="Kuijpers" },
+                new Person{Firstname = "Stijn", Lastname="Smulders" },
+            };
+            List<Workshop> ws = new List<Workshop>
+            {
+                new Workshop{WorkshopName = "WEBS1", Active = true},
+                new Workshop{WorkshopName = "PROG4", Active = false},
+                new Workshop{WorkshopName = "PROG5", Active = true},
+            };
+
+            context.People.AddRange(people);
+            context.Workshops.AddRange(ws);
+
+            context.SaveChanges();
