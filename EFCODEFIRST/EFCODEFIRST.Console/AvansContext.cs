@@ -15,6 +15,11 @@ namespace EFCODEFIRST
 
         }
 
+        //public AvansContext() : base("AvansConnection")
+        //{
+
+        //}
+
         // Voeg DbSets toe
         public DbSet<Person> People { get; set; }
         public DbSet<Grade> Grades { get; set; }
